@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="collapsestyle.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+	<div class="container-fluid">
+		<div class="row" style="background: #ededed;padding:20px 0px;height: 500px">
+		  	
+		  	<div class="upperdiv" >
+		  		<span class="spandiv"><i class="fas fa-plus icon"></i><a href="javascript:void(0)" id="collapserowl">Link 1 to shiow</a>
+		  		</span>
+		  	</div>
+		  	<div class="innerdiv"  id="collapserow1content">
+		  		<p>mply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also</p> 
+		  	</div>
+
+
+		  	<div  class="upperdiv" >
+		  		<span class="spandiv"><i class="fas fa-plus icon"></i><a href="javascript:void(0)" id="collapserow2">Link 2 to shiow</a>
+		  			</span>
+		  	</div>
+		  	<div class="innerdiv" id="collapserow2content">
+		  		<p>mply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also</p> 
+		  	</div>
+
+
+		  	<div class="upperdiv">
+		  		<span class="spandiv"><i class="fas fa-plus icon"></i><a href="javascript:void(0)" id="collapserow3">Link 3 to shiow</a></span>
+		  	</div>
+		  	<div class="innerdiv" id="collapserow3content">
+		  		<p>mply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also</p> 
+		  	</div>
+			
+		</div>		
+	</div>
+</div>
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#collapserow1content").hide();
+		$("#collapserow2content").hide();
+		$("#collapserow3content").hide();
+		$("#collapserowl").click(function(){
+			$("#collapserow1content").fadeToggle("slow");
+			$("#collapserow2content").hide();
+			$("#collapserow3content").hide();
+		})
+		$("#collapserow2").click(function(){
+			$("#collapserow1content").hide();
+			$("#collapserow2content").fadeToggle("slow");
+			$("#collapserow3content").hide();
+		})
+		$("#collapserow3").click(function(){
+			$("#collapserow1content").hide();
+			$("#collapserow2content").hide();
+			$("#collapserow3content").fadeToggle("slow");
+		})
+	});
+</script>
+
+</body>
+</html>

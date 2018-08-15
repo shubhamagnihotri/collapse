@@ -1,0 +1,96 @@
+.container{
+
+	width: 100%;
+}
+
+.container-fluid{
+
+	margin-left:150px;
+	margin-right:150px;
+
+}
+
+.row{
+
+	width: 100%;
+    background: red;	
+    height: 100%;
+
+}
+
+.col-sm-3{
+	width: 25%;
+    position: relative;
+    float: right;
+    height: auto;
+    background: red;
+    text-align: center;
+}
+
+.col-sm-4{
+
+	width: 33.33%;
+	 position: relative;
+    float: right;
+    height: auto;
+
+}
+.col-sm-2{
+
+	width:16.666%;
+	 position: relative;
+    float: right;
+    height: auto;
+}
+
+.upperdiv{
+	width: 70%;
+	margin: 0px auto;
+	border:1px solid #b1adad;
+	height: 80px;
+}
+
+.innerdiv{
+	width: 70%;
+	margin: 0px auto;
+	border:1px solid #b1adad;
+	height: auto;
+	background: white
+}
+
+.spandiv{
+	line-height: 68px;
+	font-size: larger;
+}
+p{
+	margin: 10px 10px;
+}
+.icon{
+	color: #6f6fe7;
+}
+
+
+
+@media only screen and (max-device-width:576px){
+    .container-fluid{
+
+	margin-left:15px;
+	margin-right:15px;
+
+	}
+}
+
+ @media only screen and (min-device-width: 576px) and (max-device-width: 1024px)  {
+      
+ 	.container-fluid{
+ 		
+ 		margin-left:15px;
+		margin-right:15px;
+
+	}
+
+}
+
+
+
+
